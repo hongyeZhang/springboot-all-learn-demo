@@ -1,0 +1,29 @@
+spring:
+  redis:
+    database: 0
+#    host: 192.168.41.128
+    host: localhost
+    port: 16379
+    ssl: false
+    timeout: 0
+    password:
+    pool:
+      max-active: 8
+      max-idle: 8
+      max-wait: -1
+      min-idle: 0
+  redis2:
+    database: 0
+#    host: 192.168.41.128
+    host: localhost
+    port: 16379
+    ssl: false
+    timeout: 0
+    password:
+    pool:
+      max-active: 18
+      max-idle: 8
+      max-wait: -1
+      min-idle: 0
+
+
