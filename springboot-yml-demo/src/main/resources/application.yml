@@ -1,0 +1,13 @@
+server:
+  url: http://myapp.org
+  app:
+    name: YmlDemoApplication
+    threadCount: 10
+    users:
+      - wade
+      - James
+
+orgs:
+  - math
+  - chinese
+  - english
