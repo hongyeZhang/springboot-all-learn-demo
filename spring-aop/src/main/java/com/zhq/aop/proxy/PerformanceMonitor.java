@@ -1,4 +1,4 @@
-package com.smart.proxy;
+package com.zhq.aop.proxy;
 
 public class PerformanceMonitor {
     private static ThreadLocal<MethodPerformace> performaceRecord = new ThreadLocal<MethodPerformace>();

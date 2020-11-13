@@ -1,4 +1,4 @@
-package com.smart.advice;
+package com.zhq.aop.advice;
 
 public interface Waiter {
    void greetTo(String name);

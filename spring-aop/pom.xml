@@ -9,12 +9,19 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.zhq</groupId>
-    <artifactId>spring-boot-demo</artifactId>
+    <artifactId>spring-aop</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-boot-demo</name>
+    <name>spring-aop</name>
 
     <properties>
         <java.version>1.8</java.version>
+        <spring.version>4.2.2.RELEASE</spring.version>
+        <testng.version>6.8.7</testng.version>
+        <asm.version>4.0</asm.version>
+        <cglib.version>3.0</cglib.version>
+        <aopalliance.version>1.0</aopalliance.version>
+        <commons-codec.version>1.9</commons-codec.version>
+        <slf4j.version>1.7.5</slf4j.version>
     </properties>
 
     <dependencies>
@@ -31,6 +38,29 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>${asm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-util</artifactId>
+            <version>${asm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>${cglib.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>asm</artifactId>
+                    <groupId>org.ow2.asm</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
     </dependencies>
 
     <build>
